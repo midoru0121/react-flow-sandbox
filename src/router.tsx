@@ -5,6 +5,7 @@ import InitialNode from "./pages/InitialNode"
 import ErrorPage from "./pages/Error";
 import CustomNodesExample from "./pages/CustomNodes";
 import EasyConnectExample from "./pages/EasyConnect";
+import BasicExample from "./pages/Basic";
 
 export const router = createBrowserRouter([
     {
@@ -12,6 +13,11 @@ export const router = createBrowserRouter([
       element: <Root />,
       errorElement: <ErrorPage />,
     },
+    {
+      path: "/basic",
+      element: <BasicExample />,
+      errorElement: <ErrorPage />,
+    }, 
     {
       path: "/initial",
       element: <InitialNode />,
@@ -28,5 +34,3 @@ export const router = createBrowserRouter([
         errorElement: <ErrorPage />,
     },
   ]);
-  
-console.log(router.routes)

@@ -3,7 +3,7 @@ import { memo } from 'react';
 import { Handle, Position } from '@xyflow/react';
 
 // biome-ignore lint/suspicious/noExplicitAny: <explanation>
-const getHandles = memo(({ data, isConnectable }: { data: any, isConnectable: boolean}) => {
+const ColorSelectorNode = memo(({ data, isConnectable }: { data: any, isConnectable: boolean}) => {
   return (
     <>
       <Handle
@@ -41,4 +41,4 @@ const getHandles = memo(({ data, isConnectable }: { data: any, isConnectable: bo
 });
 
 
-export default getHandles
+export default ColorSelectorNode
